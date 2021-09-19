@@ -24,7 +24,7 @@ public class Lab1 {
 
         Footballer footballer;
         LocalDate dateOfBirth;
-        System.out.println("Введите количество футболистов:");
+        System.out.print("Введите количество футболистов:");
         int length = scanner.nextInt();
         for(int i = 0; i < length; i++) {
             System.out.println("Футболист №" + (i+1) + ":");
