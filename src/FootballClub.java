@@ -26,15 +26,15 @@ public class FootballClub {
             int age = getTotalYears(footballer.getDateOfBirth(), currentDate);
             double averageYellowCardNumber = getAverageYellowCardNumber(footballer);
 
-            if(age > 20 && averageYellowCardNumber <= 1){
-                System.out.println("Футболист №" + (i+1) + ":");
+            if(age > 20 && averageYellowCardNumber <= 1) {
+                System.out.println("Футболист №" + (i + 1) + ":");
                 System.out.println("Фамилия: " + footballer.getLastName());
                 System.out.println("Дата рождения: " + DateTimeFormatter.ofPattern("dd.MM.yyyy").format(footballer.getDateOfBirth()));
                 System.out.println("Место рождения: " + footballer.getBirthLocation());
                 System.out.println("Роль: " + footballer.getRole().getRole());
                 System.out.println("Количество игр: " + footballer.getGamesNumber());
                 System.out.println("Количество желтых карточек: " + footballer.getYellowCardNumber());
-          }
+            }
             i++;
         }
     }
